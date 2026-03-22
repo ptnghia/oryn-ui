@@ -651,4 +651,11 @@ All files at `docs-site/resources/views/docs/guides/`
 | `contributing.blade.php` | Contributing guide | ✅ | 2026-03-30 |
 | `changelog.blade.php` | Changelog page | ✅ | 2026-03-30 |
 
+### Static Export & Deployment
+
+| File | Purpose | Status | Created |
+|------|---------|--------|---------|
+| `docs-site/app/Console/Commands/ExportStaticSite.php` | `docs:export` Artisan command for static HTML generation | ✅ | 2026-03-22 |
+| `docs-site/.github/workflows/deploy.yml` | GitHub Actions: build & deploy to GitHub Pages | ✅ | 2026-03-22 |
+
 <!-- Cập nhật file này mỗi khi tạo file mới -->

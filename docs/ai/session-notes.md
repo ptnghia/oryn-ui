@@ -4,15 +4,15 @@ Ghi chú phiên làm việc hiện tại. Đọc file này đầu mỗi session 
 
 ---
 
-## Phiên làm việc gần nhất: 2026-03-30
+## Phiên làm việc gần nhất: 2026-03-22
 
 ### Trạng thái hiện tại
-- **Phase**: All Phase 0–6 implementation complete. Documentation site — Milestone 3 COMPLETE.
-- **Đã hoàn thành**: Phase 0–6 + docs-site Milestones 1–3 (all 38 component docs + 33 new pages)
+- **Phase**: All Phase 0–6 implementation complete. Documentation site — Milestone 4 COMPLETE.
+- **Đã hoàn thành**: Phase 0–6 + docs-site Milestones 1–4 (all pages + static export + GitHub Actions)
 - **Test suite**: 498 tests, 865 assertions — all passing
 - **Component count**: 94 class-based + 7 anonymous block paths (56 block files)
-- **docs-site**: Laravel 13 app at `docs-site/`. All 71 doc routes return 200 OK.
-- **Tiếp theo**: Milestone 4 (Static site generation, deployment, SEO, GitHub Pages)
+- **docs-site**: Laravel 13 app at `docs-site/`. 79 pages, static export working (5.8MB).
+- **Tiếp theo**: Enable GitHub Pages on the OrynUI-docs-site repo, verify deployment works. Then Documentation Site Verification checklist items.
 
 ### docs-site status
 - **Build**: ✅ `npm run build` succeeds

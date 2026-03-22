@@ -4,6 +4,44 @@ Log các công việc đã hoàn thành, sắp xếp theo thời gian (mới nh�
 
 ---
 
+## 2026-03-22
+
+### Session 15: docs-site — Milestone 4: Static Site Generation & Deployment
+
+**Tổng quan**: Implemented static site export pipeline with custom Artisan command, GitHub Actions deployment workflow, and SEO meta tags.
+
+#### Created:
+- **`app/Console/Commands/ExportStaticSite.php`**: Custom Artisan command `docs:export` that:
+  - Collects all 79 URLs from DocsController nav
+  - Renders each page via HTTP Kernel → saves as `path/index.html`
+  - Copies Vite build assets to output
+  - Generates `sitemap.xml` (79 URLs with priorities)
+  - Generates `robots.txt` with sitemap reference
+  - Adds `.nojekyll` for GitHub Pages
+  - Supports `--base-url` for deployment URL and `--output` for directory
+- **`.github/workflows/deploy.yml`**: GitHub Actions workflow that:
+  - Checkouts both repos (oryn-ui + docs-site) with correct directory structure
+  - Sets up PHP 8.4, Node.js 22, Composer, npm
+  - Builds Vite assets, exports static site, deploys to GitHub Pages
+- **Updated `resources/views/components/layouts/docs.blade.php`**: Added canonical URL, Open Graph (title, description, type, url, site_name), Twitter Card meta tags
+
+#### Technical decisions:
+- Custom Artisan command instead of `spatie/laravel-export` (better Laravel 13 compatibility)
+- Uses HTTP Kernel to render pages internally (no external server needed)
+- Collects paths BEFORE setting base URL (paths must match router)
+- Forces HTTPS scheme via `URL::forceScheme()`
+- Output: `dist/` directory with clean URLs (`path/index.html`)
+- Export size: 5.8MB (79 HTML files + Vite assets)
+
+#### Verification:
+- 79/79 pages exported with correct HTTPS URLs ✅
+- Sitemap.xml generated with proper priorities ✅
+- robots.txt generated ✅
+- Asset URLs use correct base path ✅
+- SEO meta tags render correctly ✅
+
+---
+
 ## 2026-03-30
 
 ### Session 14: docs-site — Milestone 3 Complete (33 New Pages)
