@@ -4,6 +4,37 @@ Log các công việc đã hoàn thành, sắp xếp theo thời gian (mới nh�
 
 ---
 
+## 2026-03-28
+
+### Session 12: docs-site — Fix All Blade Parsing Errors (All Routes 200 OK)
+
+**Tổng quan**: Fixed all 10 failing docs routes. Root cause: Blade's component scanner treats `<x-oryn-*>` tags inside `code='...'` string attributes as real component invocations, causing `@if`/`@endif` mismatches.
+
+#### Tasks hoàn thành:
+
+| # | Task | Status | Ghi chú |
+|---|------|--------|---------|
+| 1 | code-preview.blade.php rawCode slot | ✅ | Added `$displayCode` logic: rawCode slot > code attr |
+| 2 | quick-start.blade.php | ✅ | 5 code blocks → rawCode slots |
+| 3 | configuration.blade.php | ✅ | PHP NOWDOC + rawCode slots |
+| 4 | alert.blade.php | ✅ | 4 code blocks → rawCode slots |
+| 5 | card.blade.php | ✅ | 3 code blocks → rawCode slots |
+| 6 | input.blade.php | ✅ | 4 code blocks → rawCode slots (incl. single-line Usage) |
+| 7 | dialog.blade.php | ✅ | 2 code blocks → rawCode slots |
+| 8 | dropdown.blade.php | ✅ | 2 code blocks → rawCode slots |
+| 9 | tabs.blade.php | ✅ | 2 code blocks → rawCode slots |
+| 10 | spinner.blade.php | ✅ | 3 code blocks → rawCode slots (incl. single-line Usage) |
+| 11 | avatar.blade.php | ✅ | 3 code blocks → rawCode slots |
+| 12 | All 18 routes verified 200 OK | ✅ | php /tmp/test-docs.php |
+| 13 | Committed to git | ✅ | commit `0f9c3dc` |
+
+#### Bài học rút ra:
+- **Blade component scanner is greedy**: Even `code='<x-oryn-spinner />'` (single-line, self-closing) triggers Blade compilation if the component's Blade template has `@if` directives — even with seemingly simple components.
+- **Rule**: ANY `code='...'` attribute containing `<x-oryn-*>` tags must be converted to `<x-slot:rawCode>@verbatim...@endverbatim</x-slot:rawCode>`.
+- **Stale view cache**: Always run `php artisan view:clear` after editing Blade views to avoid false negatives in testing.
+
+---
+
 ## 2026-03-27
 
 ### Session 11: DataTable (Advanced) Component

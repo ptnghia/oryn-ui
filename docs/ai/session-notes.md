@@ -4,34 +4,38 @@ Ghi chú phiên làm việc hiện tại. Đọc file này đầu mỗi session 
 
 ---
 
-## Phiên làm việc gần nhất: 2026-03-27
+## Phiên làm việc gần nhất: 2026-03-28
 
 ### Trạng thái hiện tại
-- **Phase**: All Phase 0–6 implementation complete. Phase 7 (Documentation site) sẵn sàng bắt đầu.
-- **Đã hoàn thành**: Phase 0 scaffolding + Phase 1 (23 components) + Phase 2 (25 components) + Phase 3 (16 components) + Phase 4 (23 components — includes NotificationDropdown) + Phase 5 (6 components) + Phase 6 (56 block templates) + Phase 4/5 gap fixes
+- **Phase**: All Phase 0–6 implementation complete. Documentation site (`docs-site/`) WORKING.
+- **Đã hoàn thành**: Phase 0–6 + DataTable + docs-site scaffolding + all 18 routes returning 200 OK.
 - **Test suite**: 498 tests, 865 assertions — all passing
 - **Component count**: 94 class-based + 7 anonymous block paths (56 block files)
-- **Tiếp theo**: Documentation site (see `docs/plan/documentation-site.md`)
+- **docs-site**: Laravel 13 app at `docs-site/`. All routes 200 OK. Build passes.
+- **Tiếp theo**: Start php artisan serve in docs-site/ and open browser to verify visually.
+
+### docs-site status
+- **Build**: ✅ `npm run build` succeeds (174.58 kB CSS, 82.04 kB JS)
+- **Routes**: ✅ All 18 routes return 200 (verified via /tmp/test-docs.php)
+- **Committed**: ✅ commit `0f9c3dc` on `main`
+
+### Key technical decisions for docs-site
+1. **Tailwind CSS 4**: `@theme inline` block in `app.css` maps Oryn CSS vars to Tailwind color tokens
+2. **Alpine.js**: aliased in `vite.config.js` to resolve from docs-site's `node_modules`
+3. **Layout**: `components/layouts/docs.blade.php` (NOT `layouts/docs.blade.php`)
+4. **Code examples**: Use `<x-slot:rawCode>@verbatim...@endverbatim</x-slot:rawCode>` for ANY code block containing `<x-oryn-*>` tags (even single-line) — Blade's component scanner will incorrectly compile them otherwise
+
+### Key files for docs-site
+- `docs-site/resources/views/components/docs/code-preview.blade.php` — handles both `code='...'` (plain text only) and `rawCode` slot (for component examples)
+- `docs-site/resources/views/components/layouts/docs.blade.php` — docs layout
+- `docs-site/resources/css/app.css` — Tailwind 4 with `@theme inline` mapping
+- `docs-site/vite.config.js` — alpinejs alias
+- `docs-site/app/Http/Controllers/DocsController.php` — nav structure + route handler
 
 ### Các file quan trọng cần đọc khi bắt đầu session mới
 1. `docs/ai/activity-log.md` — Xem việc đã làm
 2. `docs/plan/documentation-site.md` — Checklist cho documentation site
 3. `.github/copilot-instructions.md` — Conventions & standards
-4. `src/OrynUIServiceProvider.php` — Component registration (94 class-based + 7 anonymous block paths)
-
-### Gap fixes completed (Session 10)
-- **NotificationDropdown**: New template component (`<x-oryn-notification-dropdown>`) — Alpine dropdown with notifications[], markAsRead/markAllAsRead, badge count, empty state, named slots
-- **Chart CSS vars**: Runtime resolution of --primary/--success/--error/--warning/--info via getComputedStyle
-- **Destroy hooks**: All 6 vendor components now have destroy() methods
-- **CDN config**: `config('oryn-ui.vendors.cdn')` toggle + versioned URLs for all 6 libraries
-- **Active menu route matching**: `routeMatching` boolean prop on Menu — scans DOM for a[href], longest-prefix match, auto-activates via data-event-key/data-collapse-key
-- **Layout hotswap**: ThemeConfigurator saves to localStorage + page reload (Blade-only)
-
-### Quyết định còn pending
-- CSS class prefix: chưa rename `.button` → `.oryn-button` (giữ nguyên tên gốc trước)
-- Chưa quyết định domain cho documentation site
-- DataTable: still deferred, needs Table + Pagination + Select + Input composition
-- True layout hotswap deferred to Livewire phase
 
 ---
 

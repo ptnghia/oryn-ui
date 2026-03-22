@@ -1,8 +1,9 @@
 # Documentation Site Plan
 
-**Trạng thái**: ⏳ Not started
+**Trạng thái**: 🔄 In Progress — Milestone 1 ✅ / Milestone 2 🔄 (10/57 component pages)
 **Phụ thuộc**: Phase 0 (package scaffolding), runs parallel with Phase 1+
 **Ưu tiên**: 🟢 Song song
+**Repo**: https://github.com/ptnghia/OrynUI-docs-site (separate repo)
 
 Documentation site là một Laravel app sử dụng chính Oryn UI (dog-fooding).
 
@@ -11,36 +12,36 @@ Documentation site là một Laravel app sử dụng chính Oryn UI (dog-fooding
 ## Milestone 1 — MVP (alongside Phase 1)
 
 ### Site Scaffolding
-- [ ] Laravel app trong `docs/` directory
-- [ ] Install Oryn UI package (path repository)
-- [ ] Tailwind CSS 4 setup
-- [ ] Alpine.js setup
-- [ ] Basic layout: sidebar + content area
+- [x] Laravel app trong `docs-site/` directory (separate repo: OrynUI-docs-site)
+- [x] Install Oryn UI package (path repository)
+- [x] Tailwind CSS 4 setup (`@theme inline` mapping Oryn CSS vars to Tailwind tokens)
+- [x] Alpine.js setup (aliased in vite.config.js)
+- [x] Basic layout: sidebar + content area
 
 ### Core Pages
-- [ ] Homepage / landing
-- [ ] Getting Started: Installation
-- [ ] Getting Started: Quick Start
-- [ ] Getting Started: Configuration
-- [ ] Theming: Overview
-- [ ] Theming: Colors & CSS Variables
-- [ ] Theming: Dark Mode
-- [ ] Theming: Presets
+- [x] Homepage / landing
+- [x] Getting Started: Installation
+- [x] Getting Started: Quick Start
+- [x] Getting Started: Configuration
+- [x] Theming: Overview
+- [x] Theming: Colors & CSS Variables
+- [x] Theming: Dark Mode
+- [x] Theming: Presets
 
 ### Code Preview Component
-- [ ] `CodePreview` Blade component
-- [ ] Live rendered output above
-- [ ] Syntax-highlighted source code below (Prism.js)
-- [ ] Copy button
+- [x] `CodePreview` Blade component
+- [x] Live rendered output above
+- [ ] Syntax-highlighted source code below (Prism.js) — using plain pre/code styling
+- [x] Copy button (clipboard API)
 - [ ] Tab variants (Blade / HTML output)
 - [ ] Responsive preview toggle (desktop/tablet/mobile)
 
 ### Navigation
-- [ ] Sidebar navigation with collapsible groups
-- [ ] Mobile hamburger menu
+- [x] Sidebar navigation with collapsible groups
+- [x] Mobile hamburger menu (Alpine `sidebarOpen` toggle)
 - [ ] Breadcrumb
-- [ ] Previous/Next page links
-- [ ] Search (Cmd+K)
+- [x] Previous/Next page links
+- [ ] Search (Cmd+K) — UI placeholder exists, not functional yet
 
 ---
 
@@ -48,30 +49,30 @@ Documentation site là một Laravel app sử dụng chính Oryn UI (dog-fooding
 
 ### Component Documentation Pages
 Structure per component page:
-- [ ] Title + description
-- [ ] Import / usage snippet
-- [ ] Basic example (CodePreview)
-- [ ] Variant examples
-- [ ] Size examples
-- [ ] Props/API reference table
-- [ ] Slots reference table
+- [x] Title + description
+- [x] Import / usage snippet
+- [x] Basic example (CodePreview)
+- [x] Variant examples
+- [x] Size examples
+- [x] Props/API reference table
+- [x] Slots reference table
 - [ ] Events reference table
 - [ ] Accessibility notes
 
 ### Phase 1 Component Docs (22 pages)
-- [ ] Alert
-- [ ] Avatar / AvatarGroup
-- [ ] Badge
-- [ ] Button
-- [ ] Card / CardHeader / CardBody / CardFooter
+- [x] Alert
+- [x] Avatar / AvatarGroup
+- [x] Badge
+- [x] Button
+- [x] Card / CardHeader / CardBody / CardFooter
 - [ ] CloseButton
 - [ ] Collapse / CollapseGroup (Accordion)
 - [ ] FormItem / FormLabel
 - [ ] Icon
-- [ ] Input / InputGroup / InputAddon
+- [x] Input / InputGroup / InputAddon
 - [ ] Progress
 - [ ] Skeleton
-- [ ] Spinner
+- [x] Spinner
 - [ ] StatusIcon
 - [ ] Steps
 - [ ] Table (basic)
@@ -86,11 +87,11 @@ Structure per component page:
 - [ ] Switcher
 - [ ] Segment / SegmentItem
 - [ ] Tooltip
-- [ ] Dialog
+- [x] Dialog
 - [ ] Drawer
-- [ ] Dropdown / DropdownItem / DropdownSub
+- [x] Dropdown / DropdownItem / DropdownSub
 - [ ] Toast
-- [ ] Tabs / TabList / TabNav / TabContent
+- [x] Tabs / TabList / TabNav / TabContent
 - [ ] Menu / MenuItem / MenuCollapse / MenuGroup
 - [ ] Pagination
 - [ ] Upload

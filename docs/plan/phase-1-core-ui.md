@@ -19,7 +19,7 @@ Mỗi component cần hoàn thành **đầy đủ 5 bước**:
 - [x] PHP: `src/Components/UI/Alert.php`
 - [x] CSS: verify `resources/css/components/alert.css` (migrated in Phase 0)
 - [x] Test: `tests/Feature/Components/UI/AlertTest.php`
-- [ ] Doc: `docs/site/pages/components/alert.blade.php`
+- [x] Doc: `docs-site/resources/views/docs/components/alert.blade.php`
 - [x] Props: type (success/warning/danger/info), title, closable, showIcon, customIcon
 - [x] Slots: default, icon
 
@@ -27,7 +27,7 @@ Mỗi component cần hoàn thành **đầy đủ 5 bước**:
 - [x] Blade: `resources/views/components/ui/badge.blade.php`
 - [x] PHP: `src/Components/UI/Badge.php`
 - [x] Test: `tests/Feature/Components/UI/BadgeTest.php`
-- [ ] Doc page
+- [x] Doc page
 - [x] Props: content, maxCount, innerClass
 
 ### Tag
@@ -48,7 +48,7 @@ Mỗi component cần hoàn thành **đầy đủ 5 bước**:
 - [x] Blade: `resources/views/components/ui/spinner.blade.php`
 - [x] PHP: `src/Components/UI/Spinner.php`
 - [x] Test: `tests/Feature/Components/UI/SpinnerTest.php`
-- [ ] Doc page
+- [x] Doc page
 - [x] Props: size, isSpinning, enableTheme, customColorClass
 
 ### Skeleton
@@ -80,7 +80,7 @@ Mỗi component cần hoàn thành **đầy đủ 5 bước**:
 - [x] Blade: `resources/views/components/ui/card.blade.php`
 - [x] PHP: `src/Components/UI/Card.php`
 - [x] Test: `tests/Feature/Components/UI/CardTest.php`
-- [ ] Doc page
+- [x] Doc page
 - [x] Props: bordered, clickable, bodyClass, headerBordered, footerBordered
 - [x] Slots: default, header, headerExtra, footer
 
@@ -88,28 +88,28 @@ Mỗi component cần hoàn thành **đầy đủ 5 bước**:
 - [x] Blade: `resources/views/components/ui/button.blade.php`
 - [x] PHP: `src/Components/UI/Button.php`
 - [x] Test: `tests/Feature/Components/UI/ButtonTest.php`
-- [ ] Doc page
+- [x] Doc page
 - [x] Props: variant (solid/plain/default), size (xs/sm/md/lg), shape (round/circle/none), loading, disabled, icon, block, active, href, iconAlignment, tag
 
 ### Avatar
 - [x] Blade: `resources/views/components/ui/avatar.blade.php`
 - [x] PHP: `src/Components/UI/Avatar.php`
 - [x] Test: `tests/Feature/Components/UI/AvatarTest.php`
-- [ ] Doc page
+- [x] Doc page
 - [x] Props: src, alt, size (sm/md/lg|number), shape (circle/round/square), icon
 
 ### AvatarGroup
 - [x] Blade: `resources/views/components/ui/avatar-group.blade.php`
 - [x] PHP: `src/Components/UI/AvatarGroup.php`
 - [x] Test: `tests/Feature/Components/UI/AvatarTest.php`
-- [ ] Doc page
+- [x] Doc page
 - [x] Props: chained, maxCount, omittedAvatarContent
 
 ### Input
 - [x] Blade: `resources/views/components/ui/input.blade.php`
 - [x] PHP: `src/Components/UI/Input.php`
 - [x] Test: `tests/Feature/Components/UI/InputTest.php`
-- [ ] Doc page
+- [x] Doc page
 - [x] Props: size (xs/sm/md/lg), invalid, disabled, prefix, suffix, textArea
 
 ### InputGroup
