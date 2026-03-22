@@ -18,6 +18,9 @@ package-lock.json
 .DS_Store
 Thumbs.db
 
+# Documentation site (separate repo: https://github.com/ptnghia/OrynUI-docs-site)
+/docs-site/
+
 # IDE
 .idea/
 .vscode/
