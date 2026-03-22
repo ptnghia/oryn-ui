@@ -4,6 +4,58 @@ Log các công việc đã hoàn thành, sắp xếp theo thời gian (mới nh�
 
 ---
 
+## 2026-03-29
+
+### Session 13: docs-site — Complete All 28 Remaining Component Doc Pages
+
+**Tổng quan**: Created all 28 missing component documentation pages (8 Basic + 8 Form + 6 Interactive + 6 Complex). Fixed prev/next navigation links in 3 existing pages. Fixed 2 rendering errors (table sub-component names, time-input route). All 38 component pages now return 200 OK.
+
+#### New pages created:
+
+| # | Component | Category | Notes |
+|---|-----------|----------|-------|
+| 1 | close-button | Basic | Simple close button variants |
+| 2 | icon | Basic | Guide page (no component class) |
+| 3 | progress | Basic | Color, sizes, custom label |
+| 4 | skeleton | Basic | Various shapes, animation |
+| 5 | steps | Basic | Vertical/clickable/custom status |
+| 6 | table | Basic | Hoverable/compact/borderless + sub-components |
+| 7 | tag | Basic | Variants, prefix/suffix, closable |
+| 8 | timeline | Basic | Alternate/custom content |
+| 9 | checkbox | Form | Group, disabled, custom |
+| 10 | form-item | Form | Validation, layout, asterisk |
+| 11 | radio | Form | Group, disabled, custom |
+| 12 | segment | Form | Sizes, disabled |
+| 13 | select | Form | Clearable, object options |
+| 14 | switcher | Form | Sizes, color, label |
+| 15 | textarea | Form | Via Input textArea prop |
+| 16 | upload | Form | Drag/drop, accept, preview |
+| 17 | carousel | Interactive | Autoplay, navigation, fade |
+| 18 | drawer | Interactive | Placements, custom width |
+| 19 | menu | Interactive | Collapsible, icons |
+| 20 | pagination | Interactive | Sizes, display options |
+| 21 | toast | Interactive | Variants, placement, close |
+| 22 | tooltip | Interactive | Placements, disabled |
+| 23 | auto-complete | Complex | Object options, clearable |
+| 24 | data-table | Complex | Sortable, selectable, loading |
+| 25 | date-picker | Complex | Min/max, inline, sizes |
+| 26 | otp-input | Complex | Custom length, paste support |
+| 27 | slider | Complex | Range, marks, tooltip |
+| 28 | time-input | Complex | 12h/24h, seconds toggle |
+
+#### Fixes:
+- spinner.blade.php: Added missing prev link (Skeleton), changed next from Tabs to Steps
+- dialog.blade.php: Changed prev from CloseButton to Carousel
+- dropdown.blade.php: Changed prev from Dialog to Drawer
+- table.blade.php: Fixed sub-component names (t-head→thead, t-body→tbody, t-foot→tfoot)
+- time-input.blade.php: Fixed route name (docs.layout→docs.component with param 'layout')
+
+#### Verification:
+- All 38 component routes return HTTP 200 ✅
+- Updated docs/plan/documentation-site.md ✅
+
+---
+
 ## 2026-03-28
 
 ### Session 12: docs-site — Fix All Blade Parsing Errors (All Routes 200 OK)

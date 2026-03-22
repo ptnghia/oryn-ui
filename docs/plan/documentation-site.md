@@ -1,6 +1,6 @@
 # Documentation Site Plan
 
-**Trạng thái**: 🔄 In Progress — Milestone 1 ✅ / Milestone 2 🔄 (10/57 component pages)
+**Trạng thái**: 🔄 In Progress — Milestone 1 ✅ / Milestone 2 ✅ (38/38 component pages done)
 **Phụ thuộc**: Phase 0 (package scaffolding), runs parallel with Phase 1+
 **Ưu tiên**: 🟢 Song song
 **Repo**: https://github.com/ptnghia/OrynUI-docs-site (separate repo)
@@ -59,55 +59,49 @@ Structure per component page:
 - [ ] Events reference table
 - [ ] Accessibility notes
 
-### Phase 1 Component Docs (22 pages)
+### Phase 1 Component Docs (Basic + Form)
 - [x] Alert
 - [x] Avatar / AvatarGroup
 - [x] Badge
 - [x] Button
 - [x] Card / CardHeader / CardBody / CardFooter
-- [ ] CloseButton
-- [ ] Collapse / CollapseGroup (Accordion)
-- [ ] FormItem / FormLabel
-- [ ] Icon
+- [x] CloseButton
+- [x] FormItem / FormLabel
+- [x] Icon (guide page)
 - [x] Input / InputGroup / InputAddon
-- [ ] Progress
-- [ ] Skeleton
+- [x] Progress
+- [x] Skeleton
 - [x] Spinner
-- [ ] StatusIcon
-- [ ] Steps
-- [ ] Table (basic)
-- [ ] Tag
-- [ ] Textarea
-- [ ] Timeline
-- [ ] Notification (static)
+- [x] Steps
+- [x] Table
+- [x] Tag
+- [x] Textarea
+- [x] Timeline
+- [x] Checkbox / CheckboxGroup
+- [x] Radio / RadioGroup
+- [x] Segment
+- [x] Select
+- [x] Switcher
+- [x] Upload
 
-### Phase 2 Component Docs (25 pages)
-- [ ] Checkbox / CheckboxGroup
-- [ ] Radio / RadioGroup
-- [ ] Switcher
-- [ ] Segment / SegmentItem
-- [ ] Tooltip
+### Phase 2 Component Docs (Interactive)
+- [x] Carousel
 - [x] Dialog
-- [ ] Drawer
+- [x] Drawer
 - [x] Dropdown / DropdownItem / DropdownSub
-- [ ] Toast
+- [x] Menu / MenuItem / MenuCollapse / MenuGroup
+- [x] Pagination
 - [x] Tabs / TabList / TabNav / TabContent
-- [ ] Menu / MenuItem / MenuCollapse / MenuGroup
-- [ ] Pagination
-- [ ] Upload
-- [ ] Carousel
+- [x] Toast
+- [x] Tooltip
 
-### Phase 3 Component Docs (10 pages)
-- [ ] Select
-- [ ] AutoComplete
-- [ ] OtpInput
-- [ ] DatePicker
-- [ ] DatePickerRange
-- [ ] DateTimePicker
-- [ ] TimeInput
-- [ ] Slider
-- [ ] Table (sortable)
-- [ ] DataTable
+### Phase 3 Component Docs (Complex)
+- [x] AutoComplete
+- [x] DataTable
+- [x] DatePicker
+- [x] OtpInput
+- [x] Slider
+- [x] TimeInput
 
 ---
 

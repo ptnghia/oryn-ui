@@ -520,4 +520,72 @@ Danh sách tất cả file đã tạo trong dự án, mục đích, và trạng 
 
 ---
 
+## Documentation Site (docs-site/)
+
+> Repo riêng: `https://github.com/ptnghia/OrynUI-docs-site`
+
+### Component Doc Pages
+
+All files at `docs-site/resources/views/docs/components/`
+
+#### Basic Components
+
+| File | Purpose | Status | Created |
+|------|---------|--------|---------|
+| `alert.blade.php` | Alert component docs | ✅ | 2026-03-27 |
+| `avatar.blade.php` | Avatar component docs | ✅ | 2026-03-27 |
+| `badge.blade.php` | Badge component docs | ✅ | 2026-03-27 |
+| `button.blade.php` | Button component docs | ✅ | 2026-03-27 |
+| `card.blade.php` | Card component docs | ✅ | 2026-03-27 |
+| `close-button.blade.php` | CloseButton component docs | ✅ | 2026-03-29 |
+| `icon.blade.php` | Icon component docs | ✅ | 2026-03-29 |
+| `progress.blade.php` | Progress component docs | ✅ | 2026-03-29 |
+| `skeleton.blade.php` | Skeleton component docs | ✅ | 2026-03-29 |
+| `spinner.blade.php` | Spinner component docs | ✅ | 2026-03-27 |
+| `steps.blade.php` | Steps component docs | ✅ | 2026-03-29 |
+| `table.blade.php` | Table component docs | ✅ | 2026-03-29 |
+| `tag.blade.php` | Tag component docs | ✅ | 2026-03-29 |
+| `timeline.blade.php` | Timeline component docs | ✅ | 2026-03-29 |
+
+#### Form Components
+
+| File | Purpose | Status | Created |
+|------|---------|--------|---------|
+| `checkbox.blade.php` | Checkbox component docs | ✅ | 2026-03-29 |
+| `form-item.blade.php` | FormItem component docs | ✅ | 2026-03-29 |
+| `input.blade.php` | Input component docs | ✅ | 2026-03-27 |
+| `radio.blade.php` | Radio component docs | ✅ | 2026-03-29 |
+| `segment.blade.php` | Segment component docs | ✅ | 2026-03-29 |
+| `select.blade.php` | Select component docs | ✅ | 2026-03-29 |
+| `switcher.blade.php` | Switcher component docs | ✅ | 2026-03-29 |
+| `textarea.blade.php` | Textarea component docs | ✅ | 2026-03-29 |
+| `upload.blade.php` | Upload component docs | ✅ | 2026-03-29 |
+
+#### Interactive Components
+
+| File | Purpose | Status | Created |
+|------|---------|--------|---------|
+| `carousel.blade.php` | Carousel component docs | ✅ | 2026-03-29 |
+| `dialog.blade.php` | Dialog component docs | ✅ | 2026-03-27 |
+| `drawer.blade.php` | Drawer component docs | ✅ | 2026-03-29 |
+| `dropdown.blade.php` | Dropdown component docs | ✅ | 2026-03-27 |
+| `menu.blade.php` | Menu component docs | ✅ | 2026-03-29 |
+| `pagination.blade.php` | Pagination component docs | ✅ | 2026-03-29 |
+| `tabs.blade.php` | Tabs component docs | ✅ | 2026-03-27 |
+| `toast.blade.php` | Toast component docs | ✅ | 2026-03-29 |
+| `tooltip.blade.php` | Tooltip component docs | ✅ | 2026-03-29 |
+
+#### Complex Components
+
+| File | Purpose | Status | Created |
+|------|---------|--------|---------|
+| `auto-complete.blade.php` | AutoComplete component docs | ✅ | 2026-03-29 |
+| `data-table.blade.php` | DataTable component docs | ✅ | 2026-03-29 |
+| `date-picker.blade.php` | DatePicker component docs | ✅ | 2026-03-29 |
+| `otp-input.blade.php` | OtpInput component docs | ✅ | 2026-03-29 |
+| `slider.blade.php` | Slider component docs | ✅ | 2026-03-29 |
+| `time-input.blade.php` | TimeInput component docs | ✅ | 2026-03-29 |
+
+---
+
 <!-- Cập nhật file này mỗi khi tạo file mới -->
