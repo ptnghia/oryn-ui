@@ -1,0 +1,56 @@
+{
+    "name": "oryn/ui",
+    "description": "A comprehensive Laravel UI component package built with Tailwind CSS 4 and Alpine.js 3. 128+ Blade components, 6 layout systems, 46 page blocks, 5 theme presets.",
+    "keywords": [
+        "laravel",
+        "blade",
+        "components",
+        "tailwindcss",
+        "alpinejs",
+        "ui",
+        "admin",
+        "dashboard"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/ptnghia/oryn-ui",
+    "support": {
+        "issues": "https://github.com/ptnghia/oryn-ui/issues",
+        "source": "https://github.com/ptnghia/oryn-ui"
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/view": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oryn\\UI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Oryn\\UI\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Oryn\\UI\\OrynUIServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

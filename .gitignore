@@ -1,0 +1,33 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Build output
+/dist/
+/build/
+
+# Testing
+.phpunit.cache/
+.phpunit.result.cache
+
+# Lock files (package consumers manage their own)
+composer.lock
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Reference source template (NOT part of the package)
+Ecme - NextJs Tailwind Admin Template/
+
+# Planning docs (internal only)
+FEASIBILITY.md
+CONVERSION-PLAN.md
+DOCUMENTATION-PLAN.md
