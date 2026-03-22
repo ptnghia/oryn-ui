@@ -588,4 +588,67 @@ All files at `docs-site/resources/views/docs/components/`
 
 ---
 
+### Layout & Template Doc Pages
+
+All files at `docs-site/resources/views/docs/components/`
+
+| File | Purpose | Status | Created |
+|------|---------|--------|---------|
+| `layout.blade.php` | Layouts overview | ✅ | 2026-03-30 |
+| `layout-collapsible-side.blade.php` | CollapsibleSide layout docs | ✅ | 2026-03-30 |
+| `layout-stacked-side.blade.php` | StackedSide layout docs | ✅ | 2026-03-30 |
+| `layout-top-bar-classic.blade.php` | TopBarClassic layout docs | ✅ | 2026-03-30 |
+| `layout-frameless-side.blade.php` | FramelessSide layout docs | ✅ | 2026-03-30 |
+| `layout-content-overlay.blade.php` | ContentOverlay layout docs | ✅ | 2026-03-30 |
+| `layout-blank.blade.php` | Blank layout docs | ✅ | 2026-03-30 |
+| `template-header.blade.php` | Header template docs | ✅ | 2026-03-30 |
+| `template-side-nav.blade.php` | SideNav template docs | ✅ | 2026-03-30 |
+| `template-mobile-nav.blade.php` | MobileNav template docs | ✅ | 2026-03-30 |
+| `template-footer.blade.php` | Footer template docs | ✅ | 2026-03-30 |
+| `template-theme-configurator.blade.php` | ThemeConfigurator template docs | ✅ | 2026-03-30 |
+
+### Third-Party Component Doc Pages
+
+All files at `docs-site/resources/views/docs/components/`
+
+| File | Purpose | Status | Created |
+|------|---------|--------|---------|
+| `chart.blade.php` | Chart (ApexCharts) docs | ✅ | 2026-03-30 |
+| `rich-text-editor.blade.php` | RichTextEditor (TipTap) docs | ✅ | 2026-03-30 |
+| `calendar-view.blade.php` | CalendarView (FullCalendar) docs | ✅ | 2026-03-30 |
+| `gantt-chart.blade.php` | GanttChart docs | ✅ | 2026-03-30 |
+| `syntax-highlighter.blade.php` | SyntaxHighlighter (PrismJS) docs | ✅ | 2026-03-30 |
+| `region-map.blade.php` | RegionMap (Leaflet) docs | ✅ | 2026-03-30 |
+
+### Block Doc Pages
+
+All files at `docs-site/resources/views/docs/blocks/`
+
+| File | Purpose | Status | Created |
+|------|---------|--------|---------|
+| `_placeholder.blade.php` | Block page placeholder/fallback | ✅ | 2026-03-30 |
+| `auth.blade.php` | Auth block docs | ✅ | 2026-03-30 |
+| `dashboard.blade.php` | Dashboard block docs | ✅ | 2026-03-30 |
+| `crud.blade.php` | CRUD block docs | ✅ | 2026-03-30 |
+| `app.blade.php` | App block docs | ✅ | 2026-03-30 |
+| `account.blade.php` | Account block docs | ✅ | 2026-03-30 |
+| `utility.blade.php` | Utility page block docs | ✅ | 2026-03-30 |
+| `help-center.blade.php` | Help Center block docs | ✅ | 2026-03-30 |
+
+### Guide Pages
+
+All files at `docs-site/resources/views/docs/guides/`
+
+| File | Purpose | Status | Created |
+|------|---------|--------|---------|
+| `_placeholder.blade.php` | Guide page placeholder/fallback | ✅ | 2026-03-30 |
+| `customizing-components.blade.php` | Customizing components guide | ✅ | 2026-03-30 |
+| `custom-themes.blade.php` | Custom themes guide | ✅ | 2026-03-30 |
+| `rtl-support.blade.php` | RTL support guide | ✅ | 2026-03-30 |
+| `accessibility.blade.php` | Accessibility guide | ✅ | 2026-03-30 |
+| `livewire.blade.php` | Livewire integration guide | ✅ | 2026-03-30 |
+| `vue-inertia.blade.php` | Vue.js/Inertia integration guide | ✅ | 2026-03-30 |
+| `contributing.blade.php` | Contributing guide | ✅ | 2026-03-30 |
+| `changelog.blade.php` | Changelog page | ✅ | 2026-03-30 |
+
 <!-- Cập nhật file này mỗi khi tạo file mới -->

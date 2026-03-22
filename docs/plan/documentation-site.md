@@ -108,45 +108,45 @@ Structure per component page:
 ## Milestone 3 — Complete (alongside Phase 4-6)
 
 ### Template & Layout Docs
-- [ ] Layouts Overview
-- [ ] CollapsibleSide Layout
-- [ ] StackedSide Layout
-- [ ] TopBarClassic Layout
-- [ ] FramelessSide Layout
-- [ ] ContentOverlay Layout
-- [ ] Blank Layout
-- [ ] Header
-- [ ] SideNav
-- [ ] MobileNav
-- [ ] Footer
-- [ ] ThemeConfigurator
+- [x] Layouts Overview
+- [x] CollapsibleSide Layout
+- [x] StackedSide Layout
+- [x] TopBarClassic Layout
+- [x] FramelessSide Layout
+- [x] ContentOverlay Layout
+- [x] Blank Layout
+- [x] Header
+- [x] SideNav
+- [x] MobileNav
+- [x] Footer
+- [x] ThemeConfigurator
 
 ### Third-Party Component Docs
-- [ ] Chart (ApexCharts)
-- [ ] RichTextEditor (TipTap)
-- [ ] CalendarView (FullCalendar)
-- [ ] GanttChart
-- [ ] SyntaxHighlighter (Prism.js)
-- [ ] RegionMap (Leaflet)
+- [x] Chart (ApexCharts)
+- [x] RichTextEditor (TipTap)
+- [x] CalendarView (FullCalendar)
+- [x] GanttChart
+- [x] SyntaxHighlighter (Prism.js)
+- [x] RegionMap (Leaflet)
 
 ### Page Block Docs
-- [ ] Auth Blocks (sign-in, sign-up, forgot-password, reset-password, otp)
-- [ ] Dashboard Blocks (ecommerce, project, analytic, marketing)
-- [ ] CRUD Blocks (product, customer, order, generic)
-- [ ] App Blocks (chat, file-manager, calendar, kanban, scrumboard)
-- [ ] Account Blocks (settings, activity-log, kyc, pricing)
-- [ ] Utility Blocks (403, 404, 500, maintenance)
-- [ ] Help Center Blocks
+- [x] Auth Blocks (sign-in, sign-up, forgot-password, reset-password, otp)
+- [x] Dashboard Blocks (ecommerce, project, analytic, marketing)
+- [x] CRUD Blocks (product, customer, order, generic)
+- [x] App Blocks (chat, file-manager, calendar, kanban, scrumboard)
+- [x] Account Blocks (settings, activity-log, kyc, pricing)
+- [x] Utility Blocks (403, 404, 500, maintenance)
+- [x] Help Center Blocks
 
 ### Advanced Guides
-- [ ] Customizing Components
-- [ ] Creating Custom Themes
-- [ ] RTL Support
-- [ ] Accessibility Guide
-- [ ] Livewire Integration (Phase 2 preview)
-- [ ] Vue.js / Inertia Integration (Phase 3 preview)
-- [ ] Contributing Guide
-- [ ] Changelog
+- [x] Customizing Components
+- [x] Creating Custom Themes
+- [x] RTL Support
+- [x] Accessibility Guide
+- [x] Livewire Integration (Phase 2 preview)
+- [x] Vue.js / Inertia Integration (Phase 3 preview)
+- [x] Contributing Guide
+- [x] Changelog
 
 ---
 

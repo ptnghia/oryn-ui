@@ -4,6 +4,83 @@ Log các công việc đã hoàn thành, sắp xếp theo thời gian (mới nh�
 
 ---
 
+## 2026-03-30
+
+### Session 14: docs-site — Milestone 3 Complete (33 New Pages)
+
+**Tổng quan**: Created all 33 Milestone 3 documentation pages: 12 Layout/Template docs, 6 Third-Party component docs, 7 Page Block docs, 8 Advanced Guide pages. Updated DocsController with 12-section navigation + block()/guide() methods. Added 2 new dynamic routes.
+
+#### Infrastructure:
+- **DocsController**: Expanded nav from 7 to 12 sections, added `block()` and `guide()` methods with `_placeholder` fallback
+- **routes/web.php**: Added `/blocks/{block}` and `/guides/{guide}` routes
+- **Placeholder views**: Created `blocks/_placeholder.blade.php` and `guides/_placeholder.blade.php`
+
+#### Layout & Template Pages (12):
+
+| # | Page | Type | Notes |
+|---|------|------|-------|
+| 1 | layout | Layout | Overview of 6 layout systems |
+| 2 | layout-collapsible-side | Layout | Default sidebar layout |
+| 3 | layout-stacked-side | Layout | Double sidebar variant |
+| 4 | layout-top-bar-classic | Layout | Horizontal navigation |
+| 5 | layout-frameless-side | Layout | No sidebar chrome |
+| 6 | layout-content-overlay | Layout | Content overlays sidebar |
+| 7 | layout-blank | Layout | Clean page, no navigation |
+| 8 | template-header | Template | Header configuration |
+| 9 | template-side-nav | Template | Sidebar navigation |
+| 10 | template-mobile-nav | Template | Responsive mobile nav |
+| 11 | template-footer | Template | Footer variants |
+| 12 | template-theme-configurator | Template | Theme settings panel |
+
+#### Third-Party Component Pages (6):
+
+| # | Page | Notes |
+|---|------|-------|
+| 1 | chart | ApexCharts integration |
+| 2 | rich-text-editor | TipTap WYSIWYG |
+| 3 | calendar-view | FullCalendar |
+| 4 | gantt-chart | Frappe Gantt |
+| 5 | syntax-highlighter | PrismJS |
+| 6 | region-map | Leaflet maps |
+
+#### Page Block Pages (7):
+
+| # | Page | Notes |
+|---|------|-------|
+| 1 | auth | sign-in, sign-up, forgot/reset-password, otp |
+| 2 | dashboard | ecommerce, project, analytic, marketing |
+| 3 | crud | product, customer, order tables |
+| 4 | app | chat, file-manager, calendar, kanban, scrumboard |
+| 5 | account | settings, activity-log, kyc, pricing |
+| 6 | utility | 403, 404, 500, maintenance pages |
+| 7 | help-center | Knowledge base, support articles |
+
+#### Advanced Guide Pages (8):
+
+| # | Page | Notes |
+|---|------|-------|
+| 1 | customizing-components | Props, slots, CSS overrides |
+| 2 | custom-themes | CSS variable theming |
+| 3 | rtl-support | RTL Tailwind variants |
+| 4 | accessibility | ARIA, keyboard nav, focus mgmt |
+| 5 | livewire | Phase 2 preview |
+| 6 | vue-inertia | Phase 3 CSS reuse approach |
+| 7 | contributing | Dev setup, conventions, PR process |
+| 8 | changelog | v1.0.0 release notes |
+
+#### Bugs Fixed:
+- `syntax-highlighter.blade.php`: Removed `<?php` from code example (PHP tag opened execution context in @verbatim)
+- `utility.blade.php`: Changed `<x-oryn-*>` in `code` attribute to rawCode slot with @verbatim
+- `vue-inertia.blade.php`: Escaped `{{ title }}` as `@{{ title }}` (Vue template syntax)
+- `contributing.blade.php`: Escaped `@props` as `@@props` + moved `<x-oryn-*>` code to rawCode slot
+- `changelog.blade.php`: Changed `route('docs.home')` to `route('home')` (correct route name)
+
+#### Verification:
+- All 33 new routes return HTTP 200 ✅ (total: 41 routes including 8 existing)
+- Prev/next navigation chain verified across all pages ✅
+
+---
+
 ## 2026-03-29
 
 ### Session 13: docs-site — Complete All 28 Remaining Component Doc Pages
