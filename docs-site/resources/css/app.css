@@ -1,0 +1,132 @@
+/* Tailwind CSS 4 */
+@import 'tailwindcss';
+
+/* Oryn UI base (variables, typography, reset) */
+@import '../../vendor/oryn/ui/resources/css/base/variables.css';
+
+/* Map Oryn UI CSS custom properties to Tailwind CSS 4 utility class tokens.
+   Using @theme inline so Tailwind uses var() references at runtime (no duplicate CSS vars),
+   enabling bg-primary, text-primary-subtle, etc. while respecting theme overrides. */
+@theme inline {
+    --color-primary: var(--primary);
+    --color-primary-deep: var(--primary-deep);
+    --color-primary-mild: var(--primary-mild);
+    --color-primary-subtle: var(--primary-subtle);
+    --color-error: var(--error);
+    --color-error-subtle: var(--error-subtle);
+    --color-success: var(--success);
+    --color-success-subtle: var(--success-subtle);
+    --color-info: var(--info);
+    --color-info-subtle: var(--info-subtle);
+    --color-warning: var(--warning);
+    --color-warning-subtle: var(--warning-subtle);
+    --color-neutral: var(--neutral);
+    --color-gray-50: var(--gray-50);
+    --color-gray-100: var(--gray-100);
+    --color-gray-200: var(--gray-200);
+    --color-gray-300: var(--gray-300);
+    --color-gray-400: var(--gray-400);
+    --color-gray-500: var(--gray-500);
+    --color-gray-600: var(--gray-600);
+    --color-gray-700: var(--gray-700);
+    --color-gray-800: var(--gray-800);
+    --color-gray-900: var(--gray-900);
+    --color-gray-950: var(--gray-950);
+}
+@import '../../vendor/oryn/ui/resources/css/base/typography.css';
+@import '../../vendor/oryn/ui/resources/css/base/reset.css';
+
+/* Oryn UI components */
+@import '../../vendor/oryn/ui/resources/css/components/alert.css';
+@import '../../vendor/oryn/ui/resources/css/components/avatar.css';
+@import '../../vendor/oryn/ui/resources/css/components/badge.css';
+@import '../../vendor/oryn/ui/resources/css/components/button.css';
+@import '../../vendor/oryn/ui/resources/css/components/card.css';
+@import '../../vendor/oryn/ui/resources/css/components/checkbox.css';
+@import '../../vendor/oryn/ui/resources/css/components/close-button.css';
+@import '../../vendor/oryn/ui/resources/css/components/date-picker.css';
+@import '../../vendor/oryn/ui/resources/css/components/dialog.css';
+@import '../../vendor/oryn/ui/resources/css/components/drawer.css';
+@import '../../vendor/oryn/ui/resources/css/components/dropdown.css';
+@import '../../vendor/oryn/ui/resources/css/components/form.css';
+@import '../../vendor/oryn/ui/resources/css/components/input-group.css';
+@import '../../vendor/oryn/ui/resources/css/components/input.css';
+@import '../../vendor/oryn/ui/resources/css/components/menu-item.css';
+@import '../../vendor/oryn/ui/resources/css/components/menu.css';
+@import '../../vendor/oryn/ui/resources/css/components/notification.css';
+@import '../../vendor/oryn/ui/resources/css/components/pagination.css';
+@import '../../vendor/oryn/ui/resources/css/components/progress.css';
+@import '../../vendor/oryn/ui/resources/css/components/radio.css';
+@import '../../vendor/oryn/ui/resources/css/components/scrollbar.css';
+@import '../../vendor/oryn/ui/resources/css/components/segment.css';
+@import '../../vendor/oryn/ui/resources/css/components/select.css';
+@import '../../vendor/oryn/ui/resources/css/components/skeleton.css';
+@import '../../vendor/oryn/ui/resources/css/components/slider.css';
+@import '../../vendor/oryn/ui/resources/css/components/steps.css';
+@import '../../vendor/oryn/ui/resources/css/components/switcher.css';
+@import '../../vendor/oryn/ui/resources/css/components/tables.css';
+@import '../../vendor/oryn/ui/resources/css/components/tabs.css';
+@import '../../vendor/oryn/ui/resources/css/components/tag.css';
+@import '../../vendor/oryn/ui/resources/css/components/time-input.css';
+@import '../../vendor/oryn/ui/resources/css/components/timeline.css';
+@import '../../vendor/oryn/ui/resources/css/components/toast.css';
+@import '../../vendor/oryn/ui/resources/css/components/tooltip.css';
+@import '../../vendor/oryn/ui/resources/css/components/upload.css';
+
+/* Oryn UI template styles */
+@import '../../vendor/oryn/ui/resources/css/template/header.css';
+@import '../../vendor/oryn/ui/resources/css/template/side-nav.css';
+@import '../../vendor/oryn/ui/resources/css/template/stacked-side-nav.css';
+@import '../../vendor/oryn/ui/resources/css/template/secondary-header.css';
+
+/* Oryn UI animations */
+@import '../../vendor/oryn/ui/resources/css/others/animations.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+/* Oryn UI component views */
+@source '../../vendor/oryn/ui/resources/views/**/*.blade.php';
+
+/* Documentation site custom styles */
+@layer base {
+    :root {
+        --sidebar-width: 280px;
+        --content-max-width: 860px;
+    }
+}
+
+@layer components {
+    /* Code block highlight */
+    .oryn-docs-code {
+        @apply font-mono text-sm leading-relaxed;
+    }
+
+    /* Component preview wrapper */
+    .oryn-docs-preview {
+        @apply rounded-t-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 overflow-auto;
+    }
+
+    /* Sidebar navigation */
+    .oryn-docs-sidebar-link {
+        @apply flex items-center gap-2 px-3 py-1.5 rounded-md text-sm text-gray-600 dark:text-gray-400
+               hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800
+               transition-colors duration-150;
+    }
+    .oryn-docs-sidebar-link.active {
+        @apply text-primary font-medium bg-primary-subtle dark:bg-primary/10;
+    }
+
+    /* Props table */
+    .oryn-docs-table th {
+        @apply text-left text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400
+               py-3 px-4 border-b border-gray-200 dark:border-gray-700;
+    }
+    .oryn-docs-table td {
+        @apply py-3 px-4 text-sm border-b border-gray-100 dark:border-gray-800 align-top;
+    }
+    .oryn-docs-table code {
+        @apply font-mono text-xs bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-primary;
+    }
+}
