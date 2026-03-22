@@ -12,7 +12,6 @@
 
 # Lock files (package consumers manage their own)
 composer.lock
-package-lock.json
 
 # OS files
 .DS_Store
